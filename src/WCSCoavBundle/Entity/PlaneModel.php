@@ -9,6 +9,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class PlaneModel
 {
+    public function __toString()
+    {
+        return $this->model;
+    }
     /**
      * @var int
      */
